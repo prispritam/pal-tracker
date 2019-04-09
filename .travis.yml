@@ -37,7 +37,7 @@ jobs:
         password: $CF_PASSWORD
         organization: $CF_ORG
         space: $CF_SPACE
-    - stage: deploy to cf2
+    - stage: deploy to cf
         language: bash
         script:
         - echo "Downloading $RELEASE_TAG"
