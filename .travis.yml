@@ -24,6 +24,7 @@ jobs:
         file: "build/libs/pal-tracker.jar"
         skip_cleanup: true
     - stage: deploy to cf
+      name: cf1
       language: bash
       script:
         - echo "Downloading $RELEASE_TAG"
@@ -38,6 +39,7 @@ jobs:
         organization: $CF_ORG
         space: $CF_SPACE
     - stage: deploy to cf
+        name: cf2
         language: bash
         script:
         - echo "Downloading $RELEASE_TAG"
@@ -51,4 +53,3 @@ jobs:
           password: $CF_PASSWORD2
           organization: $CF_ORG2
           space: $CF_SPACE2
-
