@@ -43,3 +43,4 @@ jobs:
           password: $CF_PASSWORD2
           organization: $CF_ORG2
           space: $CF_SPACE2
+          manifest: manifest-saranya.yml
