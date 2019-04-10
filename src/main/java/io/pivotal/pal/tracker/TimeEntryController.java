@@ -8,7 +8,7 @@ import java.util.List;
 @RestController
 public class TimeEntryController {
 
-    TimeEntryRepository timeEntryRepository;
+    private TimeEntryRepository timeEntryRepository;
 
     public TimeEntryController(TimeEntryRepository timeEntryRepository) {
 
