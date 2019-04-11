@@ -8,5 +8,3 @@ applications:
     WELCOME_MESSAGE: Hello from the review environment
     JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
     SPRING_DATASOURCE_URL: jdbc:mysql://localhost:3306/tracker_dev?user=tracker&useSSL=false&useTimezone=true&serverTimezone=UTC&useLegacyDatetimeCode=false
-    MANAGEMENT_ENDPOINTS_WEB_EXPOSURE_INCLUDE: *
-    MANAGEMENT_ENDPOINT_HEALTH_SHOWDETAILS: always
